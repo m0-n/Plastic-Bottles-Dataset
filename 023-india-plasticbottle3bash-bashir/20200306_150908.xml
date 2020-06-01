@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>023-india-plasticbottle3bash-bashir</folder>
+	<filename>20200306_150908.jpg</filename>
+	<path>/023-india-plasticbottle3bash-bashir/20200306_150908.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1678</xmin>
+			<ymin>1500</ymin>
+			<xmax>2202</xmax>
+			<ymax>1728</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1850</xmin>
+			<ymin>380</ymin>
+			<xmax>1886</xmax>
+			<ymax>395</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>022-Yazman Mandi, Pakistan-PlasticBottles04second-kashif</folder>
+	<filename>IMG_20200221_134225.jpg</filename>
+	<path>/022-Yazman Mandi, Pakistan-PlasticBottles04second-kashif/IMG_20200221_134225.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3000</width>
+		<height>3642</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1113</xmin>
+			<ymin>1394</ymin>
+			<xmax>1293</xmax>
+			<ymax>1487</ymax>
+		</bndbox>
+	</object>
+</annotation>
