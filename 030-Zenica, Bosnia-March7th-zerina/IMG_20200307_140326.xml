@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>030-Zenica, Bosnia-March7th-zerina</folder>
+	<filename>IMG_20200307_140326.jpg</filename>
+	<path>/030-Zenica, Bosnia-March7th-zerina/IMG_20200307_140326.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>2248</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2065</xmin>
+			<ymin>1573</ymin>
+			<xmax>2088</xmax>
+			<ymax>1587</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2176</xmin>
+			<ymin>1353</ymin>
+			<xmax>2183</xmax>
+			<ymax>1361</ymax>
+		</bndbox>
+	</object>
+</annotation>

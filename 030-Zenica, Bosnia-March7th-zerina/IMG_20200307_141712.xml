@@ -1,0 +1,62 @@
+<annotation verified="yes">
+	<folder>030-Zenica, Bosnia-March7th-zerina</folder>
+	<filename>IMG_20200307_141712.jpg</filename>
+	<path>/030-Zenica, Bosnia-March7th-zerina/IMG_20200307_141712.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>2248</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>306</xmin>
+			<ymin>922</ymin>
+			<xmax>315</xmax>
+			<ymax>926</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1713</xmin>
+			<ymin>978</ymin>
+			<xmax>1726</xmax>
+			<ymax>983</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2119</xmin>
+			<ymin>1000</ymin>
+			<xmax>2134</xmax>
+			<ymax>1004</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2368</xmin>
+			<ymin>1074</ymin>
+			<xmax>2375</xmax>
+			<ymax>1082</ymax>
+		</bndbox>
+	</object>
+</annotation>

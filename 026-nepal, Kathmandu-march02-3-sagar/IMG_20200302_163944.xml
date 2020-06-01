@@ -1,0 +1,86 @@
+<annotation verified="yes">
+	<folder>026-nepal, Kathmandu-march02-3-sagar</folder>
+	<filename>IMG_20200302_163944.jpg</filename>
+	<path>/026-nepal, Kathmandu-march02-3-sagar/IMG_20200302_163944.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3024</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1365</xmin>
+			<ymin>2967</ymin>
+			<xmax>1495</xmax>
+			<ymax>3175</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1604</xmin>
+			<ymin>2210</ymin>
+			<xmax>1752</xmax>
+			<ymax>2253</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1592</xmin>
+			<ymin>2440</ymin>
+			<xmax>1707</xmax>
+			<ymax>2515</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>485</xmin>
+			<ymin>2256</ymin>
+			<xmax>528</xmax>
+			<ymax>2276</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1864</xmin>
+			<ymin>2407</ymin>
+			<xmax>2061</xmax>
+			<ymax>2466</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2120</xmin>
+			<ymin>2405</ymin>
+			<xmax>2179</xmax>
+			<ymax>2439</ymax>
+		</bndbox>
+	</object>
+</annotation>

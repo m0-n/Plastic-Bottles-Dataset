@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>029-nepal, Kathmandu-march12-sagar</folder>
+	<filename>IMG_20200312_134458.jpg</filename>
+	<path>/029-nepal, Kathmandu-march12-sagar/IMG_20200312_134458.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3024</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1373</xmin>
+			<ymin>2324</ymin>
+			<xmax>1484</xmax>
+			<ymax>2390</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1627</xmin>
+			<ymin>2223</ymin>
+			<xmax>1685</xmax>
+			<ymax>2270</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,110 @@
+<annotation verified="yes">
+	<folder>028-nepal, Kathmandu-march08-sagar</folder>
+	<filename>IMG_20200307_181904.jpg</filename>
+	<path>/028-nepal, Kathmandu-march08-sagar/IMG_20200307_181904.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3024</width>
+		<height>4032</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1062</xmin>
+			<ymin>1998</ymin>
+			<xmax>1090</xmax>
+			<ymax>2021</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2140</xmin>
+			<ymin>2321</ymin>
+			<xmax>2178</xmax>
+			<ymax>2337</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1225</xmin>
+			<ymin>3346</ymin>
+			<xmax>1270</xmax>
+			<ymax>3397</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1315</xmin>
+			<ymin>2839</ymin>
+			<xmax>1369</xmax>
+			<ymax>2913</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2199</xmin>
+			<ymin>2325</ymin>
+			<xmax>2233</xmax>
+			<ymax>2347</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2302</xmin>
+			<ymin>3981</ymin>
+			<xmax>2341</xmax>
+			<ymax>4032</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1413</xmin>
+			<ymin>2207</ymin>
+			<xmax>1452</xmax>
+			<ymax>2227</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>965</xmin>
+			<ymin>2011</ymin>
+			<xmax>992</xmax>
+			<ymax>2026</ymax>
+		</bndbox>
+	</object>
+</annotation>
