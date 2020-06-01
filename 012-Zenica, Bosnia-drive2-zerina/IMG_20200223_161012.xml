@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>012-Zenica, Bosnia-drive2-zerina</folder>
+	<filename>IMG_20200223_161012.jpg</filename>
+	<path>/012-Zenica, Bosnia-drive2-zerina/IMG_20200223_161012.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>2248</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1811</xmin>
+			<ymin>1219</ymin>
+			<xmax>1818</xmax>
+			<ymax>1232</ymax>
+		</bndbox>
+	</object>
+</annotation>

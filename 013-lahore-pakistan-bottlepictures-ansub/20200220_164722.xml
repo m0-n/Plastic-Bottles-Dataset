@@ -1,0 +1,62 @@
+<annotation verified="yes">
+	<folder>013-lahore-pakistan-bottlepictures-ansub</folder>
+	<filename>20200220_164722.jpg</filename>
+	<path>/013-lahore-pakistan-bottlepictures-ansub/20200220_164722.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4128</width>
+		<height>3096</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>871</xmin>
+			<ymin>1489</ymin>
+			<xmax>1434</xmax>
+			<ymax>1674</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1422</xmin>
+			<ymin>1232</ymin>
+			<xmax>1909</xmax>
+			<ymax>1491</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2430</xmin>
+			<ymin>1461</ymin>
+			<xmax>2958</xmax>
+			<ymax>1687</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2684</xmin>
+			<ymin>1626</ymin>
+			<xmax>3073</xmax>
+			<ymax>1776</ymax>
+		</bndbox>
+	</object>
+</annotation>
