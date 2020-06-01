@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>031-bangladesh-location6-tarequl</folder>
+	<filename>IMG-20200305-WA0014.jpg</filename>
+	<path>/031-bangladesh-location6-tarequl/IMG-20200305-WA0014.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>937</width>
+		<height>746</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>196</xmin>
+			<ymin>349</ymin>
+			<xmax>219</xmax>
+			<ymax>365</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>536</xmin>
+			<ymin>482</ymin>
+			<xmax>549</xmax>
+			<ymax>501</ymax>
+		</bndbox>
+	</object>
+</annotation>

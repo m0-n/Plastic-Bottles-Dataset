@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>031-bangladesh-location6-tarequl</folder>
+	<filename>_104811.jpg</filename>
+	<path>/031-bangladesh-location6-tarequl/_104811.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>8000</width>
+		<height>6000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3801</xmin>
+			<ymin>3256</ymin>
+			<xmax>3960</xmax>
+			<ymax>3546</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3709</xmin>
+			<ymin>3309</ymin>
+			<xmax>3790</xmax>
+			<ymax>3541</ymax>
+		</bndbox>
+	</object>
+</annotation>

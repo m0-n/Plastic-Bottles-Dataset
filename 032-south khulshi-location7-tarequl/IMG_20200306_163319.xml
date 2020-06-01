@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>032-south khulshi-location7-tarequl</folder>
+	<filename>IMG_20200306_163319.jpg</filename>
+	<path>/032-south khulshi-location7-tarequl/IMG_20200306_163319.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>3000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1930</xmin>
+			<ymin>1900</ymin>
+			<xmax>2518</xmax>
+			<ymax>2104</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>626</xmin>
+			<ymin>2096</ymin>
+			<xmax>1122</xmax>
+			<ymax>2376</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,50 @@
+<annotation verified="yes">
+	<folder>033-south khulshi-location8-tarequl</folder>
+	<filename>84119389_646896645878995_4311180913506516992_n.jpg</filename>
+	<path>/033-south khulshi-location8-tarequl/84119389_646896645878995_4311180913506516992_n.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>720</width>
+		<height>528</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>239</xmin>
+			<ymin>412</ymin>
+			<xmax>294</xmax>
+			<ymax>445</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>355</xmin>
+			<ymin>248</ymin>
+			<xmax>391</xmax>
+			<ymax>261</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>462</xmin>
+			<ymin>121</ymin>
+			<xmax>467</xmax>
+			<ymax>124</ymax>
+		</bndbox>
+	</object>
+</annotation>
