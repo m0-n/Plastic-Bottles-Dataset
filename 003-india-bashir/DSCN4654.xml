@@ -1,0 +1,62 @@
+<annotation verified="yes">
+	<folder>003-india-bashir</folder>
+	<filename>DSCN4654.JPG</filename>
+	<path>/003-india-bashir/DSCN4654.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4608</width>
+		<height>3456</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2745</xmin>
+			<ymin>2370</ymin>
+			<xmax>2924</xmax>
+			<ymax>2494</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2770</xmin>
+			<ymin>2283</ymin>
+			<xmax>3031</xmax>
+			<ymax>2420</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2691</xmin>
+			<ymin>2347</ymin>
+			<xmax>2746</xmax>
+			<ymax>2388</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2283</xmin>
+			<ymin>2067</ymin>
+			<xmax>2493</xmax>
+			<ymax>2153</ymax>
+		</bndbox>
+	</object>
+</annotation>

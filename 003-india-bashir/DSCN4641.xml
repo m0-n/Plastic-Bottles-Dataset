@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>003-india-bashir</folder>
+	<filename>DSCN4641.JPG</filename>
+	<path>/003-india-bashir/DSCN4641.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4608</width>
+		<height>3456</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2488</xmin>
+			<ymin>2262</ymin>
+			<xmax>2563</xmax>
+			<ymax>2346</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2525</xmin>
+			<ymin>2319</ymin>
+			<xmax>2577</xmax>
+			<ymax>2367</ymax>
+		</bndbox>
+	</object>
+</annotation>
