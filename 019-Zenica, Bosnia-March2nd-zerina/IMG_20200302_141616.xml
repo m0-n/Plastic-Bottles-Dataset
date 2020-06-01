@@ -1,0 +1,50 @@
+<annotation verified="yes">
+	<folder>019-Zenica, Bosnia-March2nd-zerina</folder>
+	<filename>IMG_20200302_141616.jpg</filename>
+	<path>/Users/oksanakurchenko/Desktop/Archive 3/019-Zenica, Bosnia-March2nd-zerina/IMG_20200302_141616.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2240</width>
+		<height>4000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1542</xmin>
+			<ymin>1289</ymin>
+			<xmax>1549</xmax>
+			<ymax>1297</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1471</xmin>
+			<ymin>1565</ymin>
+			<xmax>1515</xmax>
+			<ymax>1577</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>582</xmin>
+			<ymin>1199</ymin>
+			<xmax>591</xmax>
+			<ymax>1205</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,98 @@
+<annotation verified="yes">
+	<folder>020-Zenica, Bosnia-March3rd-zerina</folder>
+	<filename>IMG_20200303_164145.jpg</filename>
+	<path>/Users/oksanakurchenko/Desktop/Archive 3/020-Zenica, Bosnia-March3rd-zerina/IMG_20200303_164145.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>2248</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1428</xmin>
+			<ymin>1354</ymin>
+			<xmax>1447</xmax>
+			<ymax>1379</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1517</xmin>
+			<ymin>1360</ymin>
+			<xmax>1540</xmax>
+			<ymax>1371</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2015</xmin>
+			<ymin>1284</ymin>
+			<xmax>2030</xmax>
+			<ymax>1294</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1809</xmin>
+			<ymin>1099</ymin>
+			<xmax>1822</xmax>
+			<ymax>1108</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2571</xmin>
+			<ymin>1234</ymin>
+			<xmax>2594</xmax>
+			<ymax>1243</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3069</xmin>
+			<ymin>1076</ymin>
+			<xmax>3084</xmax>
+			<ymax>1083</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3688</xmin>
+			<ymin>959</ymin>
+			<xmax>3697</xmax>
+			<ymax>964</ymax>
+		</bndbox>
+	</object>
+</annotation>

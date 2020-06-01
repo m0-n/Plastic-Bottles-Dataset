@@ -1,0 +1,50 @@
+<annotation verified="yes">
+	<folder>018-bangladesh-location1-5-tarequl</folder>
+	<filename>IMG_20200229_081851.jpg</filename>
+	<path>/018-bangladesh-location1-5-tarequl/IMG_20200229_081851.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4160</width>
+		<height>3120</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1094</xmin>
+			<ymin>2487</ymin>
+			<xmax>1346</xmax>
+			<ymax>2708</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>3122</xmin>
+			<ymin>1968</ymin>
+			<xmax>3365</xmax>
+			<ymax>2061</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2963</xmin>
+			<ymin>1330</ymin>
+			<xmax>3138</xmax>
+			<ymax>1404</ymax>
+		</bndbox>
+	</object>
+</annotation>

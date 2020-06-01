@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>018-bangladesh-location1-5-tarequl</folder>
+	<filename>IMG_20200227_100212_BURST6.jpg</filename>
+	<path>/018-bangladesh-location1-5-tarequl/IMG_20200227_100212_BURST6.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4160</width>
+		<height>3120</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1933</xmin>
+			<ymin>2126</ymin>
+			<xmax>2064</xmax>
+			<ymax>2330</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1928</xmin>
+			<ymin>2040</ymin>
+			<xmax>2194</xmax>
+			<ymax>2153</ymax>
+		</bndbox>
+	</object>
+</annotation>

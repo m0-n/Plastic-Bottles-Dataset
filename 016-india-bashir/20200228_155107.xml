@@ -1,0 +1,26 @@
+<annotation verified="yes">
+	<folder>016-india-bashir</folder>
+	<filename>20200228_155107.jpg</filename>
+	<path>/016-india-bashir/20200228_155107.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2063</xmin>
+			<ymin>1556</ymin>
+			<xmax>2237</xmax>
+			<ymax>1635</ymax>
+		</bndbox>
+	</object>
+</annotation>
