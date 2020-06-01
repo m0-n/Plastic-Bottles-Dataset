@@ -1,0 +1,50 @@
+<annotation verified="yes">
+	<folder>007-lahore-pakistan-photosofplasticbottlesinriver-ansub</folder>
+	<filename>20200220_164759.jpg</filename>
+	<path>/007-lahore-pakistan-photosofplasticbottlesinriver-ansub/20200220_164759.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2560</width>
+		<height>1440</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1653</xmin>
+			<ymin>588</ymin>
+			<xmax>1712</xmax>
+			<ymax>766</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1300</xmin>
+			<ymin>665</ymin>
+			<xmax>1344</xmax>
+			<ymax>796</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1274</xmin>
+			<ymin>1112</ymin>
+			<xmax>1314</xmax>
+			<ymax>1246</ymax>
+		</bndbox>
+	</object>
+</annotation>

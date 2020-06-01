@@ -1,0 +1,50 @@
+<annotation verified="yes">
+	<folder>009-feb18</folder>
+	<filename>IMG_20200218_115731.jpg</filename>
+	<path>/009-feb18/IMG_20200218_115731.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1234</xmin>
+			<ymin>680</ymin>
+			<xmax>1423</xmax>
+			<ymax>773</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>183</xmin>
+			<ymin>2740</ymin>
+			<xmax>277</xmax>
+			<ymax>2867</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1556</xmin>
+			<ymin>1621</ymin>
+			<xmax>1688</xmax>
+			<ymax>1783</ymax>
+		</bndbox>
+	</object>
+</annotation>

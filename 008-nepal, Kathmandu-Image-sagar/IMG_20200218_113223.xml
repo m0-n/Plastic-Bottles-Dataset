@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>008-nepal, Kathmandu-Image-sagar</folder>
+	<filename>IMG_20200218_113223.jpg</filename>
+	<path>/008-nepal, Kathmandu-Image-sagar/IMG_20200218_113223.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4032</width>
+		<height>3024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1751</xmin>
+			<ymin>2008</ymin>
+			<xmax>1859</xmax>
+			<ymax>2160</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Plastic Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1094</xmin>
+			<ymin>2137</ymin>
+			<xmax>1120</xmax>
+			<ymax>2208</ymax>
+		</bndbox>
+	</object>
+</annotation>
