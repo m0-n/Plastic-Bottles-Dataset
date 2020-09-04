@@ -1,4 +1,4 @@
-# 999 Plastic Bottles in Rivers Dataset
+# 999 Images of Plastic Bottles in Rivers Dataset
 <img align="right" src="https://i.imgur.com/nSHYBkQ.png">
 
 This is the data repository for our resource paper currently under review at <a href="https://cikm2020.org/">CIKM 2020</a>, the 29th ACM Conference on Information and Knowledge Management. It contains the image data and labels in 34 subfolders. 
