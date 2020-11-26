@@ -27,5 +27,7 @@ Comments and feedback is always appreciated. Pull requests, for example with cor
 ## License
 The data is available under a <a href="https://wiki.creativecommons.org/wiki/public_domain">public domain license</a> and free to use by anyone without any restrictions.
 
+## Example Detection
+<img src="https://i.imgur.com/aZz7Gjo.jpeg">
 
 
