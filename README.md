@@ -1,9 +1,7 @@
 # 999 Images of Plastic Bottles in Rivers Dataset
 <img align="right" src="https://i.imgur.com/nSHYBkQ.png">
 
-This is the data repository for our resource paper currently under review at <a href="https://cikm2020.org/">CIKM 2020</a>, the 29th ACM Conference on Information and Knowledge Management. It contains the image data and labels in 34 subfolders. 
-
-It contains 999 images of plastic bottles in rivers, with 5,592 labeled bottles, taken in seven countries (Bangladesh, Bosnia, India, Indonesia, Nepal, Pakistan, Sudan). 
+This data repository contains 999 images of plastic bottles in rivers, with 5,592 labeled bottles, taken in seven countries (Bangladesh, Bosnia, India, Indonesia, Nepal, Pakistan, Sudan). It contains the image data and labels in 34 subfolders. 
 
 The purpose of the dataset is to enable novel applications and research at the intersection of machine learning and ecology. For example, it can be used to build a custom object detection model to detect and quantify pollution in rivers.
 
