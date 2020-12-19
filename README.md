@@ -17,6 +17,15 @@ After download, delete this readme.
 ## Support
 To receive support when using this dataset, please open a new issue thread and use the label <kbd>[question](https://github.com/m0-n/Plastic-Bottles-Dataset/labels/question)</kbd>. This project is actively supported and you can expect a reply in a day or two.
 
+## Model performance
+A preliminary model trained on the dataset achieved an average precision of 0.541 with precision of 92% and recall of 42%  on a holdout-set of static images of the same dataset. Performance can generally be expected to decline with distance. Real-world performance may be lower than on the holdout-set as images can be expected to be more different than the training set. 
+
+Tiling (e.g. 3x3) was shown to be highly effective in improving average precision. Thus, when device performance permits, split camera input in 3x3 tiles and run inference on all simultaneously. The model is suited for edge devices, such as the Raspberry Pi.
+
+<img src="https://i.imgur.com/fhZ6CaE.jpg" width="500px">
+<img src="https://i.imgur.com/x1Sfuny.jpg" width="500px">
+
+
 ## Showcase
 To showcase your research (any academic / non-academic projects), please open a new issue thread and use the label <kbd>[showcase](https://github.com/m0-n/Plastic-Bottles-Dataset/labels/showcase)</kbd>. Please feel free to also post early-stage projects and even ideas and link any relevant papers.
 
@@ -27,7 +36,7 @@ Comments and feedback is always appreciated. Pull requests, for example with cor
 ## License
 The data is available under a <a href="https://wiki.creativecommons.org/wiki/public_domain">public domain license</a> and free to use by anyone without any restrictions.
 
-## Example Detection
+## Example Detections
 <img src="https://i.imgur.com/aZz7Gjo.jpeg">
 
 
