@@ -33,6 +33,22 @@ Tiling (e.g. 3x3) was shown to be highly effective in improving average precisio
 <img src="https://i.imgur.com/fhZ6CaE.jpg" width="500px">
 <img src="https://i.imgur.com/x1Sfuny.jpg" width="500px">
 
+|                            |        |              |           |          |                     |
+|:---------------------------|:-------|:-------------|:----------|:---------|:--------------------|
+| Preprocessing              | TT\*\* | Conf. tresh. | Precision | Recall   | Avg Precision\*\*\* |
+| None                       | 4h     | 0.07         | 55.2%\*   | 48.7%\*  | 0.38                |
+| 3x3 Tiling                 | 4h     | 0.22         | 56.5%\*   | 59.1%\*  | 0.54                |
+| Mosaic                     | 4h     | 0.27         | 55.9%\*   | 48.6%\*  | 0.43                |
+| Random rotation            | 4h     | 0.20         | 49.6%\*   | 50.4%\*  | 0.36                |
+| 5x5 Tiling                 | 4h     | 0.22         | 62.0%\*   | 57.7%\*  | 0.54                |
+| 3x3 Tiling + auto-orient   | 4h     | 0.22         | 45.3%\*   | 55.24%\* | 0.48                |
+| 3x3 Tiling + contrast      | 4h     | 0.22         | 66.0%\*   | 54.6%\*  | 0.52                |
+| 3x3 Tiling (final model)   | 11h    | 0.22         | 56.5%\*   | 59.1%\*  | 0.54                |
+
+Model performance comparison
+
+\*at 0.01 IoU \*\*training time (node hours) \*\*\*area under curve at
+0.5 IoU
 
 ## Data gathering
 
