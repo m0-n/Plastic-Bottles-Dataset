@@ -118,8 +118,46 @@ By folder:
 
 A  total  of  c. 15.000  images  have  been  taken  during  the  data  gathering  process.Many of these images were near duplicates.  This was due to the photographers taking1 many images directly after each other over the course of a few seconds.  I removed these near duplicates manually by going through every image.This  step  was  responsible  for  an  order-of-magnitude  reduction  in  the  number  ofimages.  However, a different angle on the same bottle did qualify as a distinct bottleand was not marked as a duplicate.  During deduplication, some images were rotatedto  fit  the  perspective  of  a  human  standing  on  that  spot.   Rotation  was  not  used  tocreate more data (so when a rotated image was used, the original was removed from the dataset).
 
+
+
 ## Labeling Process and Statistics
 The images remaining after deduplication were  labeled using labelImg. Every plastic bottle in every picture was tagged  with a rectangular label and one round of checking by a different person was done.
+
+The number of plastic bottles per picture varies significantly.  There are 239 imageswith just one bottle, 190 with two, 125 with three, 84 with four, 60 with five, 51 withsix, 46 with seven and 40 images with eight bottles.  A group of 164 images has ninebottles or more.  This is shown in below figure which shows the distribution ofthe number of labels across all images.  The group with nine and more bottles in eachimage makes up a total of 53.9% (3,014) of all labels.
+
+<img src="https://i.imgur.com/gPljx1T.jpg" width="500px">
+
+In below figure  we look at the number of images and labels in each folder, with the y-axis being the log(count) of images and labels and the x-axis is the id of the session/folder.  This shows us the number of images as well as the number of labels for each subfolder of our dataset. This underlines that some folders have many more labels (both in absolute numbers and on a per-image basis) as others.
+
+<img src="https://i.imgur.com/2xtGY0G.jpg" width="500px">
+
+This means there is significant variance between the sessions in terms of the number of images as well as in the number of labels. The distribution of images and labels on a per-country level is shown below:
+
+<img src="https://i.imgur.com/XG4i10P.jpg" width="500px">
+
+The variance in the image to labels ratio is not a reflection on the individual countries’ pollution status, but due to the photographer’s performance and settings.
+
+For example, many of the pictures in Bosnia were taken from a very large river and from great distance, showing a lot of bottles in a river section, mainly because the river section is very large. This also leads to the individual bottles being very small.  By contrast, pictures from Sudan generally showed a smaller section of a river, leading to pictures with generally less bottles in it.
+The differences in the number of pictures for each country are due to different levels of productivity of the photographers, with the most productive ones delivering many times more useable pictures per workhour than the others. 
+
+
+The average image size in the dataset is 11.25mp, with a minimum of 0.38mp and a maximum of 48mp. The median image ratio is 3024x3096 pixels.
+
+The width and height distribution is briefly sketched below.
+
+<img src="https://i.imgur.com/sYifgQl.png" width="500px">
+
+
+A label heatmap on the dataset shows that bottles tend to be more present in the center of pictures, but with plentiful exceptions. 
+
+This is expected as humans tend to place the objects they want to photograph more towards the center of the picture frame. 
+
+
+
+<img src="https://i.imgur.com/LYz610c.png" width="500px">
+
+
+If there are any mistakes or bottles missing, I encourage readers to inform me about their changes (e.g. make a pull request) and I will update the dataset and give credit for any amends made.
 
 
 
