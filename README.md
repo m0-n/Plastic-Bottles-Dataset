@@ -33,6 +33,8 @@ Tiling (e.g. 3x3) was shown to be highly effective in improving average precisio
 <img src="https://i.imgur.com/fhZ6CaE.jpg" width="500px">
 <img src="https://i.imgur.com/x1Sfuny.jpg" width="500px">
 
+Model performance comparison with different preprocessing (all models Google Cloud AutoML):
+
 |                            |        |              |           |          |                     |
 |:---------------------------|:-------|:-------------|:----------|:---------|:--------------------|
 | Preprocessing              | TT\*\* | Conf. tresh. | Precision | Recall   | Avg Precision\*\*\* |
@@ -45,10 +47,24 @@ Tiling (e.g. 3x3) was shown to be highly effective in improving average precisio
 | 3x3 Tiling + contrast      | 4h     | 0.22         | 66.0%\*   | 54.6%\*  | 0.52                |
 | 3x3 Tiling (final model)   | 11h    | 0.22         | 56.5%\*   | 59.1%\*  | 0.54                |
 
-Model performance comparison
 
 \*at 0.01 IoU \*\*training time (node hours) \*\*\*area under curve at
 0.5 IoU
+
+The final model with 3x3 tiling preprocessing performed 42.1\% better than the baseline with no preprocessing with an area under curve of 0.54 instead of 0.38.
+
+I believe the effectiveness of tiling on our data was due to the input images being quite large with a median image ratio of 3024x3096. Without tiling, input images were probably down-sampled before training and thus lost information on smaller bottles. This would also explain why 5x5 tiling did not perform better than 3x3 tiling. 
+
+Using a mosaic preprocessing step gave the model a boost of 13.1\% compared to the raw data. Random image and label box rotation reduced performance by 5.3\%. 
+
+Auto-orienting images (discarding the exif-meta data in the images) along with 3x3 tiling did perform 11.2\% worse than just using tiling. 
+
+Increasing contrast with histogram equalization did not have a strong effect on model performance with a decrease of 3.8\% compared to using tiling alone. 
+At the end, there were three models with identical precision scores and it would have also been possible to pick one of the other two as the final model. 
+
+The package size was about 2.8MB for all models. The models were optimized for accuracy and the processing speed / frames-per-second at inference time was not taken into account. Pruning one of these models and using it with TensorFlow Lite may result in (presumably slightly) lower accuracy. 
+During training, model loss fell quickly within the first 2-3 hours. Increasing training time was only attempted for the best-performing approach, but was stopped early after 11 hours (24 hours were scheduled), as no further reductions in loss could be realised at that point. That model did not do better than the same model trained just for 4 hours. 
+
 
 ## Data gathering
 
