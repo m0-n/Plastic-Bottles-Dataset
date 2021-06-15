@@ -160,8 +160,35 @@ This is expected as humans tend to place the objects they want to photograph mor
 If there are any mistakes or bottles missing, I encourage readers to inform me about their changes (e.g. make a pull request) and I will update the dataset and give credit for any amends made.
 
 
+## Preprocessing Suggestions
+
+The dataset in this repository has _not_ been preprocessed, these are suggestions before training.
+
+I used  2x2 and 3x3 tiling for preprocessing the data to create more training data and to increase the relative size of the bottles in the picture frame. 
+
+<img src="https://i.imgur.com/QfoDSuw.jpg" width="500px">
+
+I also tried mosaic preprocessing, which was not effective. 
 
 
+<img src="https://i.imgur.com/J5Q6THk.jpg" width="500px">
+
+
+I tried other forms of preprocessing, such as random image box rotation and random label box rotation. The idea was to make the model generalize better to different camera positions by rotating the image by a random value between -15 degrees and +15 degrees  However, this did not work well and these approaches was discarded as they did not improve accuracy.
+
+<img src="https://i.imgur.com/2iRKjkN.jpg" width="500px">
+
+
+I also tried to increase the contrast of the images by using histogram equalization after the tiling step. Histogram equalization is a technique to improve contrast in images, by spreading out more frequent intensity values (e.g. a certain color). This leads to a higher contrast overall in the picture and in particular in areas of previously low contrast.
+
+<img src="https://i.imgur.com/qRv6Yr9.jpg" width="500px">
+
+A few examples of contrast-enhanced images are provided below:
+
+
+<img src="https://i.imgur.com/dAbMD3X.jpg" width="500px">
+
+Adding contrast seemed like a good idea, because there should be contrast between the bottles and the water, but it may be low. Reinforcing the contrast, so I thought, may lead to the model recognising the unique shape of the plastic bottle better, as the lines / separation from the background would be more visible. However, that outcome did not materialize and the contrast enhancement was removed from the preprocessing. 
 
 ## Example Hardware
 
