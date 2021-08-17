@@ -11,7 +11,7 @@ To download the dataset, simply clone the repository (ca. 2.6 GB):
 
 Alternatively, <a href="https://github.com/m0-n/Plastic-Bottles-Dataset/archive/master.zip">click here</a> for a ZIP file. 
 
-After download, delete this readme. 
+After download, delete this readme.
 
 ## Quick Start (with Model)
 
@@ -20,7 +20,7 @@ If you don't want to train your model or just want to get started quickly, you c
 The model graph is available as TensorFlow Protobuf and TensorFlow Lite. 
 
 ## Background
-Rivers as vehicles for plastic transport remain understudied in the context of global plastic pollution emissions. This work presents a first prototype of a model that can detect plastic objects in rivers which can be used on resource-constrained devices without internet connection.
+Rivers as vehicles for plastic transport remain understudied in the context of global plastic pollution emissions. This work presents a prototype of a model that can detect plastic objects in rivers which can be used on resource-constrained devices without internet connection.
 
 Estimates on how much plastic is emitted by a river mainly rely on mathematical models that consider the size of cities near the river, their development level and more. This is not very granular, as only a monthly estimate for the output of a whole river or city is given. This makes the data often not very actionable insight, because the most polluting rivers tend to also be very long, which makes it hard to know where to start exactly. The data is also statistically infered, not measured in the real world and reflects what we think is realistic not what actually is. 
 
@@ -29,8 +29,8 @@ A preliminary model trained on the dataset achieved an average precision of 0.54
 
 Tiling (e.g. 3x3) was shown to be highly effective in improving average precision. Thus, when device performance permits, split camera input in 3x3 tiles and run inference on all simultaneously. The model is suited for edge devices, such as the Raspberry Pi.
 
-<img src="https://i.imgur.com/fhZ6CaE.jpg" width="500px">
-<img src="https://i.imgur.com/x1Sfuny.jpg" width="500px">
+<img src="https://i.imgur.com/fhZ6CaE.jpg" width="700px" align="center" />
+<img src="https://i.imgur.com/x1Sfuny.jpg" width="700px" align="center" >
 
 Model performance comparison with different preprocessing (all models Google Cloud AutoML):
 
