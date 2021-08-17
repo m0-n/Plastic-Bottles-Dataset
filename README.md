@@ -175,9 +175,7 @@ For example, many of the pictures in Bosnia were taken from a very large river a
 The differences in the number of pictures for each country are due to different levels of productivity of the photographers, with the most productive ones delivering many times more useable pictures per workhour than the others. 
 
 
-The average image size in the dataset is 11.25mp, with a minimum of 0.38mp and a maximum of 48mp. The median image ratio is 3024x3096 pixels.
-
-The width and height distribution is sketched below.
+The average image size in the dataset is 11.25mp, with a minimum of 0.38mp and a maximum of 48mp. The median image ratio is 3024x3096 pixels. The width and height distribution is sketched below.
 <div align="center">
 <img src="https://i.imgur.com/sYifgQl.png" width="500px">
 </div>
@@ -187,7 +185,7 @@ A label heatmap on the dataset shows that bottles tend to be more present in the
 This is expected as humans tend to place the objects they want to photograph more towards the center of the picture frame. 
 
 <div align="center">
-<img src="https://i.imgur.com/LYz610c.png" width="500px">
+<img src="https://i.imgur.com/LYz610c.png" width="450px">
 </div>
 
 If there are any mistakes or bottles missing, I encourage readers to inform me about their changes (e.g. make a pull request) and I will update the dataset and give credit for any amends made.
@@ -199,39 +197,51 @@ The dataset in this repository has _not_ been preprocessed, these are suggestion
 
 I used  2x2 and 3x3 tiling for preprocessing the data to create more training data and to increase the relative size of the bottles in the picture frame. 
 
-<img src="https://i.imgur.com/QfoDSuw.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/QfoDSuw.jpg" width="650px">
+</div>
 
-I also tried mosaic preprocessing, which was not effective. 
+I tried mosaic preprocessing, which was not effective. 
 
-
-<img src="https://i.imgur.com/J5Q6THk.jpg" width="500px">
-
+<div align="center">
+<img src="https://i.imgur.com/J5Q6THk.jpg" width="650px">
+  </div>
 
 I tried other forms of preprocessing, such as random image box rotation and random label box rotation. The idea was to make the model generalize better to different camera positions by rotating the image by a random value between -15 degrees and +15 degrees  However, this did not work well and these approaches was discarded as they did not improve accuracy.
 
-<img src="https://i.imgur.com/2iRKjkN.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/2iRKjkN.jpg" width="650px">
+  </div>
 
+I also tried to increase the contrast of the images by using histogram equalization after the tiling step i.e. enhance contrast in images by spreading out more frequent intensity values (e.g. a certain color) and thus use more spectrum. This leads to a higher contrast overall in the picture and in particular in areas of previously low contrast.
 
-I also tried to increase the contrast of the images by using histogram equalization after the tiling step. Histogram equalization is a technique to improve contrast in images, by spreading out more frequent intensity values (e.g. a certain color). This leads to a higher contrast overall in the picture and in particular in areas of previously low contrast.
-
-<img src="https://i.imgur.com/qRv6Yr9.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/qRv6Yr9.jpg" width="650px">
+  </div>
 
 A few examples of contrast-enhanced images are provided below:
 
+  <div align="center">
+<img src="https://i.imgur.com/dAbMD3X.jpg" width="650px">
+  </div>
+  
+Adding contrast seemed like a good idea, because there should be contrast between the bottles and the water, but it may be low. Reinforcing the contrast, so I thought, may lead to the model recognising the unique shape of the plastic bottle better, as the lines / separation from the background would be more visible. But this was not true. The contrast modification was removed from preprocessing. 
 
-<img src="https://i.imgur.com/dAbMD3X.jpg" width="500px">
+## Example Hardware & Example Detection
 
-Adding contrast seemed like a good idea, because there should be contrast between the bottles and the water, but it may be low. Reinforcing the contrast, so I thought, may lead to the model recognising the unique shape of the plastic bottle better, as the lines / separation from the background would be more visible. However, that outcome did not materialize and the contrast enhancement was removed from the preprocessing. 
-
-## Example Hardware
-
-Model has been tested on Raspberry Pi4B (1,5 GHz 64-Bit-Quad-Core 4GB LPDDR4-3200 SDRAM 64 GB SSD, 3-4 Watt) 
+Model has been tested on Raspberry Pi4B (1,5 GHz 64-Bit-Quad-Core 4GB LPDDR4-3200 SDRAM 64 GB SSD, 3-4 Watt) with an Intel Neural Compute Stick 2 to speed up inference. 
 
 The goal was to test the model on an device similar to what could be used in a real-world scenario, with limited computing power and energy supply.
 
-
+<p>My hardware setup:</b>
+  <div align="center">
 <img src="https://i.imgur.com/I52XvmX.png" width="500px">
+</div>
 
+<p>Below is an example of a detection of the model on the device:</b>
+  <div align="center">
+<img src="https://i.imgur.com/aZz7Gjo.jpeg" width="500px">
+</div>
 
 
 ## Support
@@ -247,8 +257,5 @@ Comments and feedback is always appreciated. Pull requests, for example with cor
 
 ## License
 The data is available under a <a href="https://wiki.creativecommons.org/wiki/public_domain">public domain license</a> and free to use by anyone without any restrictions.
-
-## Example Detections
-<img src="https://i.imgur.com/aZz7Gjo.jpeg">
 
 
