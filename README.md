@@ -227,18 +227,89 @@ A few examples of contrast-enhanced images are provided below:
   
 Adding contrast seemed like a good idea, because there should be contrast between the bottles and the water, but it may be low. Reinforcing the contrast, so I thought, may lead to the model recognising the unique shape of the plastic bottle better, as the lines / separation from the background would be more visible. But this was not true. The contrast modification was removed from preprocessing. 
 
+## Example detections
+
+A confidence threshold of 0.1 was used and predictions were deemed correct if there was any overlap of the ground-truth label box with the predicted label box (IoU larger or equal 0.01). Evaluation was done on a per-label, not per-image basis. This means each label is being looked at individually (one picture, one prediction), example:
+
+
+<div align="center">
+  <img src="https://i.imgur.com/FY3Q5AX.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/m8izt37.jpg" width="500px">
+</div>
+
+### True positives
+Let us first look at some examples of successful detection, where the bottles have been successfully predicted, as defined as there being at least one pixel overlap between the predicted bounding-box and the ground-truth bounding box (human label).
+
+<div align="center">
+  <img src="https://i.imgur.com/5Zq4yW7.png" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/QrJBzQJ.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/Ts0SphD.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/nIgCsq4.jpg" width="500px">
+</div>
+
+## False negatives
+Now let's look at the examples below where a bottle should have been detected, but has not. Despite the bottle being detected as an object in most cases, the confidence score was below the threshold. False-negatives typically occurred in bottles further away.
+
+<div align="center">
+  <img src="https://i.imgur.com/j6CRQhL.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/DhhU7Gp.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/c6Hm6um.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/ecjE69w.jpg" width="500px">
+</div>
+
+## False positives
+Further, we can see some examples below where a bottle has been detected, but shouldn't. These false-positives were typically other plastic objects or, in some cases, reflections of bottles that were far away from the original bottle and so did not have label overlap. 
+
+<div align="center">
+  <img src="https://i.imgur.com/wfuRBE0.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/H6uqKjf.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/mf4HRiG.jpg" width="500px">
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/5y3lfYg.jpg" width="500px">
+</div>
+
+
 ## Example Hardware & Example Detection
 
 Model has been tested on Raspberry Pi4B (1,5 GHz 64-Bit-Quad-Core 4GB LPDDR4-3200 SDRAM 64 GB SSD, 3-4 Watt) with an Intel Neural Compute Stick 2 to speed up inference. 
 
 The goal was to test the model on an device similar to what could be used in a real-world scenario, with limited computing power and energy supply.
 
-<p>My hardware setup:</b>
-  <div align="center">
-<img src="https://i.imgur.com/I52XvmX.png" width="500px">
+<b>My hardware setup:</b>
+ <div align="center">
+<img src="https://i.imgur.com/aZz7Gjo.jpeg" width="500px">
 </div>
 
-<p>Below is an example of a detection of the model on the device:</b>
+<b>Below is an example of a detection on the device:</b>
   <div align="center">
 <img src="https://i.imgur.com/aZz7Gjo.jpeg" width="500px">
 </div>
