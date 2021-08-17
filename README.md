@@ -2,7 +2,7 @@
 
 <img align="right" src="https://i.imgur.com/nSHYBkQ.png">
 
-This dataset contains 5,592 labeled plastic bottles in rivers. It can be used to build a object detection model to detect and quantify plastic pollution in rivers.
+This is a dataset repository containing 5,592 labeled plastic bottles in rivers and steps towards an object detection model to find and quantify plastic pollution in rivers.
 
 ## Quick Start (with Dataset)
 To download the dataset, simply clone the repository (ca. 2.6 GB):
@@ -15,7 +15,7 @@ After download, delete this readme.
 
 ## Quick Start (with Model)
 
-If you don't want to train your model or just want to get started quickly, you can download a model trained on the dataset here: https://github.com/m0-n/Plastic-Bottle-Detection-Models
+If you don't want to train your model or just want to get started quickly, you can download a model trained on the dataset <a href="https://github.com/m0-n/Plastic-Bottle-Detection-Models">here</a>.
 
 The model graph is available as TensorFlow Protobuf and TensorFlow Lite. 
 
@@ -306,7 +306,8 @@ The goal was to test the model on an device similar to what could be used in a r
 
 <b>My hardware setup:</b>
  <div align="center">
-<img src="https://i.imgur.com/aZz7Gjo.jpeg" width="500px">
+<img src="https://i.imgur.com/I52XvmX.png" width="500px">
+  
 </div>
 
 <b>Below is an example of a detection on the device:</b>
