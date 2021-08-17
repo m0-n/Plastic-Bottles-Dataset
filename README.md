@@ -25,18 +25,24 @@ Rivers as vehicles for plastic transport remain understudied in the context of g
 Estimates on how much plastic is emitted by a river mainly rely on mathematical models that consider the size of cities near the river, their development level and more. This is not very granular, as only a monthly estimate for the output of a whole river or city is given. This makes the data often not very actionable insight, because the most polluting rivers tend to also be very long, which makes it hard to know where to start exactly. The data is also statistically infered, not measured in the real world and reflects what we think is realistic not what actually is. 
 
 ## Model performance
-A preliminary model trained on the dataset achieved an average precision of 0.541 with precision of 92% and recall of 42%  on a holdout-set of static images of the same dataset. Performance can generally be expected to decline with distance. Real-world performance may be lower than on the holdout-set as images can be expected to be more different than the training set. 
+My own model trained on the dataset achieved an average precision of 0.541 with precision of 92% and recall of 42%  on a holdout-set of static images of the same dataset. Performance can generally be expected to decline with distance. Real-world performance may be lower than on the holdout-set as images can be expected to be more different than the training set. 
 
 Tiling (e.g. 3x3) was shown to be highly effective in improving average precision. Thus, when device performance permits, split camera input in 3x3 tiles and run inference on all simultaneously. The model is suited for edge devices, such as the Raspberry Pi.
 
-<img src="https://i.imgur.com/fhZ6CaE.jpg" width="700px" align="center" />
-<img src="https://i.imgur.com/x1Sfuny.jpg" width="700px" align="center" >
+<div align="center">
+  <b>Bias-Variance Tradeoff</b><br />
+<img src="https://i.imgur.com/fhZ6CaE.jpg" width="600px">
+</div>
 
-Model performance comparison with different preprocessing (all models Google Cloud AutoML):
-
-|                            |        |              |           |          |                     |
+<div align="center">
+<img src="https://i.imgur.com/x1Sfuny.jpg" width="600px">
+</div>
+  
+ <div align="center">
+  <b>Model performance comparison with different preprocessing (all models Google Cloud AutoML):</b><br />
+  
+| Preprocessing used        | TT\*\* |Conf. tresh.  | Precision | Recall   | Avg Precision\*\*\* |
 |:---------------------------|:-------|:-------------|:----------|:---------|:--------------------|
-| Preprocessing              | TT\*\* | Conf. tresh. | Precision | Recall   | Avg Precision\*\*\* |
 | None                       | 4h     | 0.07         | 55.2%\*   | 48.7%\*  | 0.38                |
 | 3x3 Tiling                 | 4h     | 0.22         | 56.5%\*   | 59.1%\*  | 0.54                |
 | Mosaic                     | 4h     | 0.27         | 55.9%\*   | 48.6%\*  | 0.43                |
@@ -49,7 +55,8 @@ Model performance comparison with different preprocessing (all models Google Clo
 
 \*at 0.01 IoU \*\*training time (node hours) \*\*\*area under curve at
 0.5 IoU
-
+</div>
+  
 The final model with 3x3 tiling preprocessing performed 42.1\% better than the baseline with no preprocessing with an area under curve of 0.54 instead of 0.38.
 
 I believe the effectiveness of tiling on our data was due to the input images being quite large with a median image ratio of 3024x3096. Without tiling, input images were probably down-sampled before training and thus lost information on smaller bottles. This would also explain why 5x5 tiling did not perform better than 3x3 tiling. 
@@ -68,26 +75,23 @@ During training, model loss fell quickly within the first 2-3 hours. Increasing 
 ## Data gathering
 
 The instructions for the photographers were:
-•Always point the camera in a 90-degree angle relative to the river
-•Try to photograph a little bit from above
-•Do not use the zoom of your camera
-•Take a lot of pictures in different places (at least 50x pictures in each place, wait at least 5 seconds between two pictures).  
-•In general, don’t wait for the perfectshot, but take many (hundreds).
-•Try to make pictures at different times in the same location (e.g.:  after sunset,around noon, afternoon etc.)
+* Always point the camera in a 90-degree angle relative to the river
+* Try to photograph a little bit from above
+* Do not use the zoom of your camera
+* Take a lot of pictures in different places (at least 50x pictures in each place, wait at least 5 seconds between two pictures).  
+* In general, don’t wait for the perfectshot, but take many (hundreds).
+* Try to make pictures at different times in the same location (e.g.:  after sunset,around noon, afternoon etc.)
 
-During the data gathering, the photographers were constantly givenexamples  of  good  and  bad  images  from  the  pool  they  sent  in  and  edge  cases  were discussed.  All supervision was conducted remotely and over Slack, a chat software. The data gathering / picture taking process took roughly two months, starting inFebruary 2020 and about 200 reported work hours by the field workers.  Pictures were mostly taken from the side of a river.  This means, for example, that the dataset maybe  less  suitable  for  e.g.   aerial  surveillance.   
+During the data gathering, the photographers were give nexamples  of  good and  bad  images  from  the  pool  they  sent  in  and  edge  cases  were discussed.   The data gathering / picture taking process took roughly two months of work.  Pictures were mostly taken from the side of a river.  This means, for example, that the dataset maybe  less  suitable  for  e.g.   aerial  surveillance.   
 
-No  images  were  taken  during  nighttimeor during bad weather conditions.  While some variance of the time of day naturallyoccurred, all images were taken during daylight. Camera zoom was intentionally not used in order to cover a large variety of dis-tances.  This means, that are a significant number of images where the plastic bottle is very far away and may only be visible upon a close look and/or using zoom.  We hope to increase the odds that a machine learning system can detect these as well, enabling surveillance of larger rivers. We estimate the bottles farthest away in our dataset have a distance of about 50-60meters to the camera.  At this point, even with zoom, a human has problems classifying the object in the picture – it is still clearly distinct from the water surface, but not easily separable e.g. from a bird. The variety of our dataset means there is also a lot of variance in the number of bottles represented in an image.  
+No  images  were  taken  during  nighttime or during bad weather conditions.  While some variance of the time of day naturally occurred, all images were taken during daylight. Camera zoom was intentionally not used in order to cover a large variety of dis-tances.  This means, that are a significant number of images where the plastic bottle is very far away and may only be visible upon a close look and/or using zoom.  I hope to increase the odds that a machine learning system can detect these as well, enabling surveillance of larger rivers. I estimate the bottles farthest away in the dataset have a distance of about 50-60 meters to the camera.  At this point, even with zoom, a human has problems classifying the object in the picture – it is still clearly distinct from the water surface, but not easily separable e.g. from a bird. The variety of our dataset means there is also a lot of variance in the number of bottles represented in an image.  
 
 There are images with bottles swimming freely as well as bottles that are relativelystationary. All bottles are photographed either on river water or on other pollutionobjects,  including  more  bottles.  No  bottles  have  been  photographed  on  land. The images  were  taken  with  different  devices,  both  mobile  phones  and  cameras.   Due  to this, the images generally have different resolutions.  No tripod has been used for any pictures and the height from which the pictures were taken may variate slightly as well as the angle of the camera.
 
 ## Dataset contents
 
-<div id="tab:my-table">
-  
-  |           |            |
+ | Attribute  | Value  |
 |:----------|:-----------|
-|           |            | 
 | Total images: | 5,592    | 
 | Avg. bottles per image:       | 5.6    |
 | Image format       | JPG  |
@@ -101,14 +105,10 @@ There are images with bottles swimming freely as well as bottles that are relati
   </div>
 
 
-By folder:
+<b>Contents by folder:</b>
 
-<div id="tab:my-table">
-
-|           |            |        |        |
+|  Folder Id |  Country | Images |  Labels |
 |:----------|:-----------|:-------|:-------|
-|           |            |        |        |
-| Folder Id | Country    | Images | Labels |
 | 001       | Indonesia  | 14     | 62     |
 | 002       | Indonesia  | 6      | 80     |
 | 003       | India      | 16     | 29     |
@@ -145,26 +145,29 @@ By folder:
 | 034       | Pakistan   | 27     | 148    |
 
 
-</div>
-
-A  total  of  c. 15.000  images  have  been  taken  during  the  data  gathering  process.Many of these images were near duplicates.  This was due to the photographers taking1 many images directly after each other over the course of a few seconds.  I removed these near duplicates manually by going through every image.This  step  was  responsible  for  an  order-of-magnitude  reduction  in  the  number  ofimages.  However, a different angle on the same bottle did qualify as a distinct bottleand was not marked as a duplicate.  During deduplication, some images were rotatedto  fit  the  perspective  of  a  human  standing  on  that  spot.   Rotation  was  not  used  tocreate more data (so when a rotated image was used, the original was removed from the dataset).
-
+A  total  of  c. 15.000  images  have  been  taken  during  the  data  gathering  process. Many of these images were near duplicates. This was due to the photographers taking many images directly after each other over the course of a few seconds.  I removed these near duplicates manually by going through every image. This  step  was  responsible  for  an  order-of-magnitude  reduction  in  the  number  of images.  However, a different angle on the same bottle did qualify as a distinct bottle and was not marked as a duplicate.  During deduplication, some images were rotated to  fit  the  perspective  of  a  human  standing  on  that  spot. Rotation  was  not  used  tocreate more data (so when a rotated image was used, the original was removed from the dataset).
 
 
 ## Labeling Process and Statistics
 The images remaining after deduplication were  labeled using labelImg. Every plastic bottle in every picture was tagged  with a rectangular label and one round of checking by a different person was done.
 
-The number of plastic bottles per picture varies significantly.  There are 239 imageswith just one bottle, 190 with two, 125 with three, 84 with four, 60 with five, 51 withsix, 46 with seven and 40 images with eight bottles.  A group of 164 images has ninebottles or more.  This is shown in below figure which shows the distribution ofthe number of labels across all images.  The group with nine and more bottles in eachimage makes up a total of 53.9% (3,014) of all labels.
+The number of plastic bottles per picture varies significantly. There are 239 images with just one bottle, 190 with two, 125 with three, 84 with four, 60 with five, 51 withsix, 46 with seven and 40 images with eight bottles.  A group of 164 images has ninebottles or more.  This is shown in below figure which shows the distribution ofthe number of labels across all images.  The group with nine and more bottles in eachimage makes up a total of 53.9% (3,014) of all labels.
 
-<img src="https://i.imgur.com/gPljx1T.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/gPljx1T.jpg" width="700px">
+</div>
 
-In below figure  we look at the number of images and labels in each folder, with the y-axis being the log(count) of images and labels and the x-axis is the id of the session/folder.  This shows us the number of images as well as the number of labels for each subfolder of our dataset. This underlines that some folders have many more labels (both in absolute numbers and on a per-image basis) as others.
+In below figure  let's look at the number of images and labels in each folder, with the y-axis being the log(count) of images and labels and the x-axis is the id of the session/folder.  This shows us the number of images as well as the number of labels for each subfolder of our dataset. This underlines that some folders have many more labels (both in absolute numbers and on a per-image basis) as others.
 
-<img src="https://i.imgur.com/2xtGY0G.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/2xtGY0G.jpg" width="700px">
+</div>
 
 This means there is significant variance between the sessions in terms of the number of images as well as in the number of labels. The distribution of images and labels on a per-country level is shown below:
 
-<img src="https://i.imgur.com/XG4i10P.jpg" width="500px">
+<div align="center">
+<img src="https://i.imgur.com/XG4i10P.jpg" width="700px">
+</div>
 
 The variance in the image to labels ratio is not a reflection on the individual countries’ pollution status, but due to the photographer’s performance and settings.
 
@@ -174,19 +177,18 @@ The differences in the number of pictures for each country are due to different 
 
 The average image size in the dataset is 11.25mp, with a minimum of 0.38mp and a maximum of 48mp. The median image ratio is 3024x3096 pixels.
 
-The width and height distribution is briefly sketched below.
-
+The width and height distribution is sketched below.
+<div align="center">
 <img src="https://i.imgur.com/sYifgQl.png" width="500px">
-
+</div>
 
 A label heatmap on the dataset shows that bottles tend to be more present in the center of pictures, but with plentiful exceptions. 
 
 This is expected as humans tend to place the objects they want to photograph more towards the center of the picture frame. 
 
-
-
+<div align="center">
 <img src="https://i.imgur.com/LYz610c.png" width="500px">
-
+</div>
 
 If there are any mistakes or bottles missing, I encourage readers to inform me about their changes (e.g. make a pull request) and I will update the dataset and give credit for any amends made.
 
